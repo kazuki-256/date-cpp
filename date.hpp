@@ -143,7 +143,7 @@ public:
     }
 
     operator std::string() const {
-            return std::string(c_str());
+        return std::string(c_str());
     }
 
 
@@ -470,6 +470,14 @@ public:
         struct tm* tm = localtime(&t);
         strftime(buffer, buffer_size, fmt, tm);
         return buffer;
+    }
+
+    std::string to_string(const char* fmt = DEFAULT_FORMAT) const {
+        struct tm* tm = localtime(&t);
+
+        std::string s(DATE_FORMATTING_BUFFER_LENGTH, '\0');
+        strftime(s.data(), s.capacity(), fmt, tm);
+        return s;
     }
 
 

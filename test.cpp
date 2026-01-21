@@ -10,6 +10,9 @@ int main(int argc, char** argv) {
 	date = date_t("2026/01/21 16:00", "%Y/%m/%d %H:%M");
 	std::cout << "parsed date2: " << date << std::endl;
 
+    // customize output format
+    std::cout << "customize output format: " << date.to_string("%Y/%m/%d %H:%M:%S") << std::endl;
+
     // forward/backward date
 	interval_t interval("3 year 1 month 4 day 1 hour 5 min 9 sec");
 	std::cout << "create interval_t: " << interval << std::endl;
