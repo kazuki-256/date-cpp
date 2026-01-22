@@ -53,3 +53,16 @@ int main(int argc, char** argv) {
 }
 
 ```
+
+
+the output would be
+
+```
+parsed date1: 2026-01-21 16:00:00
+parsed date2: 2026-01-21 16:00:00
+customize output format: 2026/01/21 16:00:00
+create interval_t: interval_t(3 years, 1 months, 4 days, 1 hours, 5 mintues, 9 seconds)
+forwarded date: 2029-02-25 17:05:09
+backwarded date: 2026-01-21 16:00:00
+week keyword used: 2026-02-04 16:00:00
+```
