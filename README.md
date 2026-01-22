@@ -14,6 +14,7 @@ to handle date by smart object in c++
 2. move date
 3. std::cout supportting
 4. customize parse / format support
+5. C std based date calculating
 
 
 ## sample
